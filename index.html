@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="https://kit.fontawesome.com/7aea00ecd5.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>Bicas.dev</h1>
+        <ul class="full-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="mobile-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="openNav()"></i>
+    </nav>
+    <section class="home"></section>
+    <section class="about"></section>
+    <section class="projects"></section>
+    <section class="contact"></section>
+
+    <script>
+        function openNav() {
+            let mobileNav = document.querySelector('.mobile-nav');
+            let nav = document.querySelector('.navbar');
+            if (mobileNav.classList.contains('opened-nav')) {
+                mobileNav.classList.remove('opened-nav');
+                nav.classList.remove('transparent')
+            } else {
+                mobileNav.classList.add('opened-nav');
+                nav.classList.add('transparent');
+            }
+        }
+
+    </script>
+</body>
+
+</html>
