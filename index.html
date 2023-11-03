@@ -33,24 +33,55 @@
         </div>
         <i class="fa-solid fa-bars" onclick="openNav()"></i>
     </nav>
-    <section class="home"></section>
+    <section class="home">
+        <div class="container">
+            <div class="home-content">
+                <div class="home-main">
+                    <div class="home-image"></div>
+                    <div class="home-text">
+                        <h1>Front-end Web Developer!</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nihil 
+                            corrupti eligendi, illumnostrum provident obcaecati fuga 
+                            consectetur magnam sint.</p>
+                        <span>
+                            <a href=""><i class="fa-brands fa-github"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </span>
+                    </div>
+                </div>
+                <div class="home-techs">
+                    <span>
+                        <img src="https://skillicons.dev/icons?i=html" alt="skill-icon" title="HTML5">
+                        <img src="https://skillicons.dev/icons?i=css" alt="skill-icon" title="CSS">
+                    </span>
+                    <span>
+                        <img src="https://skillicons.dev/icons?i=js" alt="skill-icon" title="Javascript">
+                        <img src="https://skillicons.dev/icons?i=typescript" alt="skill-icon" title="Typescript">
+                    </span>
+                    <span>
+                        <img src="https://skillicons.dev/icons?i=react" alt="skill-icon" title="React">
+                        <img src="https://skillicons.dev/icons?i=vite" alt="skill-icon" title="Vite">
+                    </span>
+                    <span>
+                        <img src="https://skillicons.dev/icons?i=github" alt="skill-icon" title="Javascript">
+                        <img src="https://skillicons.dev/icons?i=typescript" alt="skill-icon" title="Typescript">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="about"></section>
     <section class="projects"></section>
     <section class="contact"></section>
 
     <script>
         function openNav() {
-            let mobileNav = document.querySelector('.mobile-nav');
-            let nav = document.querySelector('.navbar');
-            if (mobileNav.classList.contains('opened-nav')) {
-                mobileNav.classList.remove('opened-nav');
-                nav.classList.remove('transparent')
-            } else {
-                mobileNav.classList.add('opened-nav');
-                nav.classList.add('transparent');
-            }
-        }
+            const mobileNav = document.querySelector('.mobile-nav');
+            const nav = document.querySelector('.navbar');
 
+            mobileNav.classList.toggle('opened-nav');
+            nav.classList.toggle('transparent', mobileNav.classList.contains('opened-nav'));
+        }
     </script>
 </body>
 

@@ -47,10 +47,6 @@
         padding: 25px 30px;
     }
 
-    .navbar i {
-        display: flex;
-    }
-
     .navbar ul {
         display: none;
     }
@@ -70,7 +66,8 @@
     .transparent {
         background-color: transparent;
     }
-
+    
+    .navbar i,
     .opened-nav {
         display: flex;
     }

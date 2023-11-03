@@ -18,8 +18,15 @@ body {
     font-family: Poppins, sans-serif;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
     * {
         font-size: 20px;
     }
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 70rem;
+    padding: 0 2.6rem;
+    height: inherit;
 }
