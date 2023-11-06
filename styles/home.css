@@ -82,3 +82,27 @@
     display: flex;
     gap: 1rem;
 }
+
+@media (max-width: 900px) {
+    .home {
+        height: auto;
+        padding: 7rem 0;
+    }
+    .container {
+        padding: 0 1rem;
+    }
+    .home-main,
+    .home-content {
+        flex-direction: column;
+        gap: 2rem;
+        height: auto;
+        text-align: center;
+    }
+}
+
+@media (max-width:500px) {
+    .home-image {
+        height: 17rem;
+        width: 17rem;
+    }
+}
