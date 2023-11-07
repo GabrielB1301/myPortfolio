@@ -4,7 +4,7 @@
     position: relative;
     height: 100vh;
     width: 100%;
-    background-color: var(--lightgray);
+    background-color: var(--light-background);
 }
 
 .home-content {
@@ -53,14 +53,14 @@
     font-size: 3.4rem;
     line-height: 1.2;
     margin: 1.25rem 0;
-    color: var(--darkergray);
+    color: var(--text-darker);
 }
 
 .home-text p {
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.6;
-    color: var(--darkgray);
+    color: var(--text-dark);
 }
 
 .home-text span {
@@ -73,7 +73,7 @@
 
 .home-text span i {
     font-size: 2.4rem;
-    color: var(--darkergray);
+    color: var(--text-darker);
 }
 
 .fa-linkedin:hover {

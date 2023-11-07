@@ -1,5 +1,5 @@
 .about {
-    background-color: var(--white);
+    background-color: var(--background);
     padding: 9.4rem 0;
 }
 
@@ -20,10 +20,11 @@
     height: 100%;
     position: relative;
     border-radius: 1rem;
+    border: 4px solid #2d2e32;
 }
 
 .react-background {
-    background-color: var(--darkergray);
+    background-color: #2d2e32;
     width: 6rem;
     height: 6rem;
     position: absolute;
@@ -49,7 +50,7 @@
 }
 
 .about-text h2 {
-    color: var(--darkergray);
+    color: var(--text-darker);
     font-size: 2rem;
     line-height: 1.4;
     margin-bottom: 1.4rem;
@@ -57,7 +58,7 @@
 }
 
 .about-text p {
-    color: var(--darkgray);
+    color: var(--text-dark);
     font-weight: 500;
     line-height: 1.5;
     font-size: 1.2rem;
