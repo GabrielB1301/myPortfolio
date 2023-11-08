@@ -23,9 +23,10 @@
             <li><a href="#">Projects</a></li>
             <li><a href="#">Contact</a></li>
             <li><input type="checkbox" id="chk" />
-                <label for="chk" class="switch">
-                  <span class="slider"></span>
-                </label></li>
+                <label for="chk" class="switch" onclick="darkMode()">
+                    <span class="slider"></span>
+                </label>
+            </li>
         </ul>
         <div class="mobile-nav">
             <ul>
@@ -33,10 +34,11 @@
                 <li><a href="#">About</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><input type="checkbox" id="chk1"/>
-                <label for="chk1" class="switch dark-nav">
-                  <span class="slider"></span>
-                </label></li>
+                <li><input type="checkbox" id="chk1" />
+                    <label for="chk1" class="switch dark-nav" onclick="darkMode()">
+                        <span class="slider"></span>
+                    </label>
+                </li>
             </ul>
         </div>
         <i class="fa-solid fa-bars" onclick="openNav()"></i>
@@ -81,11 +83,6 @@
     <section class="about">
         <div class="container">
             <div class="about-content">
-                <div class="about-image">
-                    <div class="react-background">
-                        <div class="react-logo"></div>
-                    </div>
-                </div>
                 <div class="about-text">
                     <h1>About Me</h1>
                     <h2>A react front end Developer</h2>
@@ -96,12 +93,56 @@
                         techniques. I am also a team player who thrives in collaborating with cross-functional teams to
                         produce outstanding web applications.</p>
                 </div>
+                <div class="about-image">
+                    <div class="react-background">
+                        <div class="react-logo"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="projects"></section>
+    <section class="projects">
+        <div class="container">
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <ul class="carousel">
+                    <li class="card">
+                        <div class="img"><img src="images/img-1.jpg" alt="img" draggable="false"></div>
+                        <h2>Blanche Pearson</h2>
+                        <span>Sales Manager</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/img-2.jpg" alt="img" draggable="false"></div>
+                        <h2>Joenas Brauers</h2>
+                        <span>Web Developer</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/img-3.jpg" alt="img" draggable="false"></div>
+                        <h2>Lariach French</h2>
+                        <span>Online Teacher</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/img-4.jpg" alt="img" draggable="false"></div>
+                        <h2>James Khosravi</h2>
+                        <span>Freelancer</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/img-5.jpg" alt="img" draggable="false"></div>
+                        <h2>Kristina Zasiadko</h2>
+                        <span>Bank Manager</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/img-6.jpg" alt="img" draggable="false"></div>
+                        <h2>Donald Horton</h2>
+                        <span>App Designer</span>
+                    </li>
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+    </section>
     <section class="contact"></section>
-
+    <script src="js/carousel.js"></script>
     <script>
         function openNav() {
             const mobileNav = document.querySelector('.mobile-nav');
@@ -109,6 +150,10 @@
 
             mobileNav.classList.toggle('opened-nav');
             nav.classList.toggle('transparent', mobileNav.classList.contains('opened-nav'));
+        }
+        function darkMode() {
+            const html = document.querySelector('html');
+            html.classList.toggle('dark-mode');
         }
     </script>
 </body>

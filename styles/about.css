@@ -1,6 +1,6 @@
 .about {
     background-color: var(--background);
-    padding: 9.4rem 0;
+    padding: 9rem 0;
 }
 
 .about-content {
@@ -82,7 +82,7 @@
         width: 28rem;
         height: 22rem;
         margin: auto;
-        margin-bottom: 2rem;
+        margin-top: 2rem;
     }
     .about-text {
         padding: 0 2rem;
@@ -90,11 +90,13 @@
 }
 
 @media (max-width: 600px) {
+    .about {
+        padding: 4rem 0;
+    }
     .react-background {
         display: none;
     }
     .about-image {
-        width: 18rem;
-        height: 12rem;
+        display: none;
     }
 }
