@@ -93,6 +93,15 @@
     gap: 1rem;
 }
 
+.home-techs span {
+    transition: 1s transform ease;
+}
+
+.home-techs span:hover {
+    transform: translateY(-1rem);
+    transition: 1s;
+}
+
 @media (max-width: 1000px) {
     .home {
         height: auto;
