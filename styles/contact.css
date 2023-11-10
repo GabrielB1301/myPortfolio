@@ -1,0 +1,72 @@
+.contact {
+    padding: 6rem 0;
+    background-color: var(--background);
+}
+
+address {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: #fff;
+}
+
+address a {
+    color: #fff;
+    text-decoration: none;
+}
+
+address div {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+address div i {
+    font-size: 2rem;
+}
+
+.address-icon {
+    width: 3rem;
+    height: 3.2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+
+footer {
+    padding: 3rem 0;
+    background-color: #2d2e32;
+    color: #fff;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-content span {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.4rem;
+}
+
+@media (max-width: 1000px) {
+    .contact {
+        text-align: center;
+    }
+    address {
+        align-items: center;
+    }
+    address div {
+        flex-direction: column;
+        text-align: center;
+    }
+}

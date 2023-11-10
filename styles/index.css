@@ -7,17 +7,20 @@
     --light-background: #f9f9f9;
     --background: #fff;
     --red: #c70a0a;
+    --card: #fff;
 }
 
 .dark-mode:root {
     --text-dark: #BDBDBD;
     --text-darker: #fdfcfc;
     --text-white: #ffffff;
-    --navbar-semi-background: #1b1b1bf7;
+    --navbar-semi-background: #2d2e32;
     --navbar-background: #121212;
     --light-background: #1F1B24;
-    --background: #1F1B24;;
+    --background: #1F1B24;
+    ;
     --red: #4b4bf0;
+    --card: #130707;
 }
 
 * {
@@ -27,7 +30,7 @@
 }
 
 body {
-    font-family: Poppins, sans-serif;
+    font-family: Poppins,sans-serif;
 }
 
 @media (min-width: 1400px) {
@@ -41,4 +44,24 @@ body {
     max-width: 67rem;
     padding: 0 2.6rem;
     height: inherit;
+}
+
+.title {
+    color: var(--red);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    color: var(--text-darker);
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin-bottom: 1.4rem;
+    font-weight: 700;
+}
+
+.subtitle i {
+    margin-left: 1rem;
 }
